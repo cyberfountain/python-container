@@ -19,10 +19,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libffi-dev \
     python3-dev \
     python3-setuptools \
-    wget \
-    xvfb \
-    libfontconfig \
-    wkhtmltopdf
+    wget
 
 RUN wget https://www.python.org/ftp/python/3.7.0/Python-3.7.0.tar.xz
 RUN tar xvf Python-3.7.0.tar.xz
