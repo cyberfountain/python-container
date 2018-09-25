@@ -23,7 +23,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 RUN wget https://www.python.org/ftp/python/3.7.0/Python-3.7.0.tar.xz
 RUN tar xvf Python-3.7.0.tar.xz
-RUN cd Python-3.7.0 && ./configure
+RUN cd Python-3.7.0 && ./configure --enable-shared
 RUN cd Python-3.7.0 && make install
 
 RUN ln -s /usr/bin/python3.7 /bin/python3
